@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="900" style="-fx-background-color: #f0f2f5;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject3.Controller.SellHomeController">
+
+    <!-- HEADER TOP BAR -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #ffffff; -fx-padding: 10 20 10 20;">
+            <ImageView fitHeight="40" fitWidth="40">
+                <image>
+                    <Image url="@../images/Logo_noName.png" />
+                </image>
+            </ImageView>
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Warehouse Management" />
+            <StackPane HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnUser" text="User" />
+        </HBox>
+    </top>
+
+    <!-- SIDEBAR -->
+    <left>
+        <VBox prefWidth="180" spacing="15" style="-fx-background-color: #e0e0e0; -fx-padding: 20;">
+            <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Danh mục" />
+            <Button fx:id="btnVatPham" prefWidth="160" text="Quản lý vật phẩm" />
+            <Button fx:id="btnMotLuotNhap" prefWidth="160" text="Nhập hàng" />
+            <Button fx:id="btnMotLuotBan" prefWidth="160" text="Bán hàng" />
+        </VBox>
+    </left>
+
+    <!-- CENTER DASHBOARD / FEATURE CARDS -->
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="25">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="30" />
+            </padding>
+
+            <!-- TITLE -->
+            <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #1E3D59;" text="Bán hàng" />
+            <Label style="-fx-font-size: 16px; -fx-text-fill: #4B4B4B;" text="Chọn chức năng để bắt đầu thao tác bán hàng" />
+
+            <!-- BUTTON CARDS -->
+            <HBox alignment="CENTER" spacing="40">
+
+                <!-- CREATE CARD -->
+                <VBox alignment="CENTER" spacing="15" style="-fx-background-color: #4CAF50; -fx-background-radius: 12;">
+                    <padding>
+                        <Insets bottom="15" left="15" right="15" top="15" />
+                    </padding>
+                    <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="📦 Tạo lượt bán hàng" />
+                    <Label style="-fx-font-size: 13px; -fx-text-fill: white;" text="Thêm một lượt bán mới vào hệ thống, cập nhật kho." wrapText="true" />
+                    <Button fx:id="btnCreate" prefHeight="35" prefWidth="120" style="-fx-background-color: white; -fx-text-fill: #4CAF50; -fx-font-weight: bold;" text="Mở" />
+                    <effect>
+                        <DropShadow color="#555555" radius="5" />
+                    </effect>
+                </VBox>
+
+                <!-- GET LIST CARD -->
+                <VBox alignment="CENTER" spacing="15" style="-fx-background-color: #2196F3; -fx-background-radius: 12;">
+                    <padding>
+                        <Insets bottom="15" left="15" right="15" top="15" />
+                    </padding>
+                    <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="📋 Danh sách bán hàng" />
+                    <Label style="-fx-font-size: 13px; -fx-text-fill: white;" text="Xem danh sách các lượt bán theo thời gian, theo sản phẩm." wrapText="true" />
+                    <Button fx:id="btnGetList" prefHeight="35" prefWidth="120" style="-fx-background-color: white; -fx-text-fill: #2196F3; -fx-font-weight: bold;" text="Mở" />
+                    <effect>
+                        <DropShadow color="#555555" radius="5" />
+                    </effect>
+                </VBox>
+
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

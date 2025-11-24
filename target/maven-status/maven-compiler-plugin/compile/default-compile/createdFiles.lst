@@ -1,0 +1,10 @@
+com\mycompany\warehouse_desktop\controller\LoginController.class
+com\mycompany\warehouse_desktop\db\interfaces\RepoInterface.class
+com\mycompany\warehouse_desktop\db\user\UserRepository.class
+com\mycompany\warehouse_desktop\MainApp.class
+com\mycompany\warehouse_desktop\db\DBConnection.class
+com\mycompany\warehouse_desktop\db\user\UserEntity.class
+com\mycompany\warehouse_desktop\controller\SignupController.class
+com\mycompany\warehouse_desktop\db\user\UserService.class
+com\mycompany\warehouse_desktop\db\interfaces\ServiceInterface.class
+com\mycompany\warehouse_desktop\db\user\UserDto.class
