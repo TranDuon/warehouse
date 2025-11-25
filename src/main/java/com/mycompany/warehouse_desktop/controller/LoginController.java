@@ -42,9 +42,7 @@ public class LoginController {
 
         if (user != null) {
             System.out.println("Login thành công: " + user.getUsername());
-
-            // TODO: Load Home.fxml (sau này)
-            // loadHome();
+            // Load Home.fxml sau này
         } else {
             noti.setText("Incorrect username or password!");
             noti.setVisible(true);
@@ -61,7 +59,7 @@ public class LoginController {
     private void showSignup() {
         try {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/fxml/signup.fxml")
+                    getClass().getResource("/view/Login/Signup.fxml")
             );
             Parent root = loader.load();
 
@@ -78,7 +76,7 @@ public class LoginController {
     public void backToLogin() {
         try {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/fxml/Login.fxml")
+                    getClass().getResource("/view/Login/Login.fxml")
             );
             Parent root = loader.load();
 

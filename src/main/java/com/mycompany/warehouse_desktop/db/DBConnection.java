@@ -7,10 +7,9 @@ import java.sql.SQLException;
 public class DBConnection {
 
 
-    private static final String URL = "jdbc:mysql://localhost:3306/warehouse?useSSL=false&serverTimezone=UTC";
+    private static final String URL = "jdbc:mysql://tramway.proxy.rlwy.net:15770/railway";
     private static final String USER = "root";
-    private static final String PASSWORD = "12345678asZ*";
-
+    private static final String PASSWORD = "jRtMLjoACtxozJtkKfWVliQtPtTAVhKe";
 
     private static DBConnection instance;
 

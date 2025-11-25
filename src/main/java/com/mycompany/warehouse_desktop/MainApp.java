@@ -14,7 +14,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/fxml/Login.fxml")
+                getClass().getResource("/view/Login/Login.fxml")
         );
 
         Parent root = loader.load();

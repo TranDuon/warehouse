@@ -5,9 +5,9 @@ import java.sql.Timestamp;
 public class SaleTransaction {
 
     private Long id;
-    private Timestamp timestamp;       // Thời gian tạo giao dịch
-    private Boolean isPaid;            // Đã thanh toán hay chưa
-    private Long userIdEmployee;       // ID nhân viên thực hiện
+    private Timestamp timestamp;
+    private Boolean isPaid;
+    private Long userIdEmployee;
 
     public SaleTransaction() {}
 

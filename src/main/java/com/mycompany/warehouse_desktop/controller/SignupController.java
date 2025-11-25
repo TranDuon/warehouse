@@ -70,7 +70,7 @@ public class SignupController {
     private void backToLogin(){
         try {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/fxml/Login.fxml")
+                    getClass().getResource("/view/Login/Login.fxml")
             );
             Parent root = loader.load();
 

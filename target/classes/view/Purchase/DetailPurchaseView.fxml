@@ -11,9 +11,10 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="500" prefWidth="800" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject3.Controller.DetailsPurschaseTransactionController">
+<BorderPane prefHeight="500" prefWidth="800" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.warehouse_desktop.controller.purchase.ListPurchaseController">
 
-    <!-- TITLE -->
+
+        <!-- TITLE -->
     <top>
         <Label alignment="CENTER" prefHeight="34.0" prefWidth="178.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Chi Tiết Lượt Nhập" BorderPane.alignment="CENTER" />
     </top>

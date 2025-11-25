@@ -1,10 +1,40 @@
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\SignupController.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\DBConnection.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\interfaces\ServiceInterface.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserEntity.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\interfaces\RepoInterface.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\MainApp.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserService.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserDto.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserRepository.java
-C:\Users\Duong_TD\Downloads\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\LoginController.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItemId.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_transaction\PurchaseTransactionRepo.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\interfaces\RepoInterface.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItem.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItem.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_invoice\SaleInvoice.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\LoginController.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\purchase\CreatePurchaseController.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\role\RoleService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransactionRepository.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\DBConnection.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItemService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItemRepo.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\purchase\ListPurchaseController.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_transaction\PurchaseTransactionService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserRepository.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransactionService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemRepository.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\purchase_transaction\PurchaseTransaction.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransaction.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserDto.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\SignupController.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\product\ProductEntity.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\MainApp.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\controller\purchase\DetailsPurchaseTransactionController.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\role\Role.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\interfaces\ServiceInterface.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\user\UserEntity.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_invoice\SaleInvoiceRepository.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserRepo.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_invoice\SaleInvoiceService.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\product\ProductRepository.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserId.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\role\RoleRepo.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUser.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemId.java
+C:\Users\Duong_TD\OneDrive - ptit.edu.vn\Documents\warehouse_desktop\src\main\java\com\mycompany\warehouse_desktop\db\product\ProductService.java
