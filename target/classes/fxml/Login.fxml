@@ -13,7 +13,6 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.mycompany.warehouse_desktop.controller.LoginController"
             prefHeight="566.0" prefWidth="750.0">
-
     <top>
         <AnchorPane prefHeight="566.0" prefWidth="750.0" BorderPane.alignment="CENTER">
             <children>

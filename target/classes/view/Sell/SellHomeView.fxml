@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="600" prefWidth="900" style="-fx-background-color: #f0f2f5;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject3.Controller.SellHomeController">
+<BorderPane prefHeight="600" prefWidth="900" style="-fx-background-color: #f0f2f5;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.warehouse_desktop.controller.SellHomeController">
 
     <!-- HEADER TOP BAR -->
     <top>

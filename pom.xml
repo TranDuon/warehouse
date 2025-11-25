@@ -13,11 +13,8 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <!-- JavaFX version -->
-        <javafx.version>21.0.2</javafx.version>
+        <javafx.version>24.0.1</javafx.version>
     </properties>
 
     <dependencies>
@@ -27,7 +24,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
-            <classifier>win</classifier>
         </dependency>
 
         <!-- JavaFX FXML -->
@@ -35,7 +31,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
-            <classifier>win</classifier>
         </dependency>
 
         <!-- MySQL JDBC -->

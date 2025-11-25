@@ -10,8 +10,8 @@
 <BorderPane prefHeight="600" prefWidth="750"
             xmlns="http://javafx.com/javafx/24.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            stylesheets="@../css/style.css"
-            fx:controller="com.mycompany.mavenproject3.Controller.SearchByNameProductController">
+            stylesheets="@/css/style.css"
+            fx:controller="com.mycompany.warehouse_desktop.controller.SearchByNameProductController">
 
     <!-- TOP BAR -->
     <top>
@@ -20,7 +20,7 @@
 
             <ImageView fitHeight="40" preserveRatio="true">
                 <image>
-                    <Image url="@../images/Logo_noName.png"/>
+                    <Image url="@/images/Logo_noName.png"/>
                 </image>
             </ImageView>
 

@@ -7,6 +7,7 @@ import com.mycompany.warehouse_desktop.db.user.UserService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
@@ -42,9 +43,7 @@ public class LoginController {
 
         if (user != null) {
             System.out.println("Login thành công: " + user.getUsername());
-
-            // TODO: Load Home.fxml (sau này)
-            // loadHome();
+            loadHome();
         } else {
             noti.setText("Incorrect username or password!");
             noti.setVisible(true);
@@ -53,15 +52,32 @@ public class LoginController {
         clearForm();
     }
 
+    private void loadHome() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/HomeView/HomeView.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) username.getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Không thể load HomeView.fxml");
+        }
+    }
+
+
     private void clearForm() {
         username.clear();
         userpassword.clear();
     }
 
+    @FXML
     private void showSignup() {
         try {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/fxml/signup.fxml")
+                    getClass().getResource("/view/Login/Signup.fxml")
             );
             Parent root = loader.load();
 
@@ -78,7 +94,7 @@ public class LoginController {
     public void backToLogin() {
         try {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/fxml/Login.fxml")
+                    getClass().getResource("/view/Login/Login.fxml")
             );
             Parent root = loader.load();
 

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="500" prefWidth="650" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject3.Controller.SearchProductSellController">
+<BorderPane prefHeight="500" prefWidth="650" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.warehouse_desktop.controller.SearchProductSellController">
 
     <top>
         <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Tìm kiếm và thêm vật phẩm" BorderPane.alignment="CENTER" />

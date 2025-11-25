@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.*?>
 
 <BorderPane prefHeight="500" prefWidth="600"
-            stylesheets="@../css/style.css"
+            stylesheets="@/css/style.css"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.mycompany.mavenproject3.Controller.DeleteProductController">
+            fx:controller="com.mycompany.warehouse_desktop.controller.DeleteProductController">
 
     <!-- TOP -->
     <top>
@@ -21,7 +21,7 @@
 
             <ImageView fitHeight="40" preserveRatio="true">
                 <image>
-                    <Image url="@../images/Logo_noName.png"/>
+                    <Image url="@/images/Logo_noName.png"/>
                 </image>
             </ImageView>
 

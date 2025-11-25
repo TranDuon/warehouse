@@ -13,7 +13,6 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.mycompany.warehouse_desktop.controller.LoginController"
             prefHeight="566.0" prefWidth="750.0">
-
     <top>
         <AnchorPane prefHeight="566.0" prefWidth="750.0" BorderPane.alignment="CENTER">
             <children>
@@ -43,7 +42,7 @@
                            layoutX="418.0"
                            pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../images/logo-icon.png" />
+                        <Image url="@/images/logo-icon.png" />
                     </image>
                 </ImageView>
 
@@ -54,7 +53,7 @@
                            rotate="90.0"
                            AnchorPane.leftAnchor="-110.0">
                     <image>
-                        <Image url="@../images/background.JPG" />
+                        <Image url="@/images/background.JPG" />
                     </image>
                 </ImageView>
 

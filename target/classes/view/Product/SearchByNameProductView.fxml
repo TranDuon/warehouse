@@ -11,7 +11,7 @@
             xmlns="http://javafx.com/javafx/24.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
             stylesheets="@../css/style.css"
-            fx:controller="com.mycompany.mavenproject3.Controller.SearchByNameProductController">
+            fx:controller="com.mycompany.warehouse_desktop.controller.SearchByNameProductController">
 
     <!-- TOP BAR -->
     <top>
