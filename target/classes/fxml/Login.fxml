@@ -42,7 +42,7 @@
                            layoutX="418.0"
                            pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../images/logo-icon.png" />
+                        <Image url="@/images/logo-icon.png" />
                     </image>
                 </ImageView>
 
@@ -53,7 +53,7 @@
                            rotate="90.0"
                            AnchorPane.leftAnchor="-110.0">
                     <image>
-                        <Image url="@../images/background.JPG" />
+                        <Image url="@/images/background.JPG" />
                     </image>
                 </ImageView>
 

@@ -7,6 +7,7 @@ com\mycompany\warehouse_desktop\db\user\UserEntity.class
 com\mycompany\warehouse_desktop\controller\SignupController.class
 com\mycompany\warehouse_desktop\db\sale_invoice\SaleInvoiceService.class
 com\mycompany\warehouse_desktop\db\purchase_transaction\PurchaseTransactionService.class
+com\mycompany\warehouse_desktop\controller\HomeController.class
 com\mycompany\warehouse_desktop\db\purchase_transaction\PurchaseTransaction.class
 com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItem.class
 com\mycompany\warehouse_desktop\db\sale_invoice\SaleInvoiceRepository.class

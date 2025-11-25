@@ -8,7 +8,7 @@
 <BorderPane prefWidth="800" prefHeight="550"
             xmlns="http://javafx.com/javafx/24.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            stylesheets="@../css/style.css"
+            stylesheets="@/css/style.css"
             fx:controller="com.mycompany.warehouse_desktop.controller.CreatePurchaseController">
 
     <!-- TOP TITLE -->

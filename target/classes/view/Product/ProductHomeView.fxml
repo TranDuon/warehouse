@@ -11,14 +11,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="600" prefWidth="900" style="-fx-background-color: #f0f2f5;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.warehouse_desktop.controller.ProductHomeController">
+<BorderPane prefHeight="600" prefWidth="900" style="-fx-background-color: #f0f2f5;" stylesheets="@/css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.warehouse_desktop.controller.ProductHomeController">
 
     <!-- HEADER TOP BAR -->
     <top>
         <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #ffffff; -fx-padding: 10 20 10 20;">
             <ImageView fitHeight="40" fitWidth="40">
                 <image>
-                    <Image url="@../images/Logo_noName.png" />
+                    <Image url="@/images/Logo_noName.png" />
                 </image>
             </ImageView>
             <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Warehouse Management" />

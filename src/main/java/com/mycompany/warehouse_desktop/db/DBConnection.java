@@ -6,10 +6,9 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-
-    private static final String URL = "jdbc:mysql://localhost:3306/warehouse?useSSL=false&serverTimezone=UTC";
-    private static final String USER = "root";
-    private static final String PASSWORD = "12345678asZ*";
+    String url = "jdbc:mysql://tramway.proxy.rlwy.net:15770/railway";
+    String user = "root";
+    String pass = "jRtMLjoACtxozJtkKfWVliQtPtTAVhKe";
 
 
     private static DBConnection instance;
@@ -31,6 +30,6 @@ public class DBConnection {
     }
 
     public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+        return DriverManager.getConnection(url, user, pass);
     }
 }

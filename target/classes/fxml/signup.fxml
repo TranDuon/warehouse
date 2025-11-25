@@ -24,7 +24,7 @@
                     <children>
                         <ImageView fitHeight="120.0" preserveRatio="true">
                             <image>
-                                <Image url="@../images/logo-icon.png" />
+                                <Image url="@/images/logo-icon.png" />
                             </image>
                         </ImageView>
                     </children>
