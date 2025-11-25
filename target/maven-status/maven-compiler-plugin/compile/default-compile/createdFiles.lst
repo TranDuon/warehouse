@@ -1,6 +1,8 @@
 com\mycompany\warehouse_desktop\db\interfaces\RepoInterface.class
 com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserId.class
 com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemRepository.class
+com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserId.class
+com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemRepository.class
 com\mycompany\warehouse_desktop\db\user\UserRepository.class
 com\mycompany\warehouse_desktop\db\role\RoleService.class
 com\mycompany\warehouse_desktop\db\user\UserEntity.class
@@ -12,6 +14,7 @@ com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItem.class
 com\mycompany\warehouse_desktop\db\sale_invoice\SaleInvoiceRepository.class
 com\mycompany\warehouse_desktop\db\user\UserService.class
 com\mycompany\warehouse_desktop\db\interfaces\ServiceInterface.class
+com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItem.class
 com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItem.class
 com\mycompany\warehouse_desktop\db\user\UserDto.class
 com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUser.class
