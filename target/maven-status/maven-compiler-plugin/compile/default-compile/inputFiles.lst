@@ -6,10 +6,12 @@ C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\co
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransactionService.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemRepository.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\user\UserRepository.java
+C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\controller\SellHomeController.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\user\UserDto.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\product\ProductService.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransaction.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\interfaces\RepoInterface.java
+C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\controller\ProductHomeController.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItemRepo.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\role\RoleRepo.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUser.java
@@ -25,6 +27,7 @@ C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\co
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\role\RoleService.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserService.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\controller\LoginController.java
+C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\controller\PurchaseHomeController.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransactionRepository.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\product\ProductEntity.java
 C:\Users\OS\OneDrive\Documents\Code\School\BaiTapJava\warehouse\src\main\java\com\mycompany\warehouse_desktop\db\DBConnection.java

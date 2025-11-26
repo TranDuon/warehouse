@@ -2,6 +2,7 @@ com\mycompany\warehouse_desktop\db\interfaces\RepoInterface.class
 com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserId.class
 com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemRepository.class
 com\mycompany\warehouse_desktop\db\user\UserRepository.class
+com\mycompany\warehouse_desktop\controller\ProductHomeController.class
 com\mycompany\warehouse_desktop\db\role\RoleService.class
 com\mycompany\warehouse_desktop\db\user\UserEntity.class
 com\mycompany\warehouse_desktop\controller\SignupController.class
@@ -19,12 +20,14 @@ com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUser.class
 com\mycompany\warehouse_desktop\db\DBConnection.class
 com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserService.class
 com\mycompany\warehouse_desktop\db\sale_order_item\SaleOrderItemService.class
+com\mycompany\warehouse_desktop\controller\SellHomeController.class
 com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransactionRepository.class
 com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransaction.class
 com\mycompany\warehouse_desktop\controller\LoginController.class
 com\mycompany\warehouse_desktop\db\purchase_transaction\PurchaseTransactionRepo.class
 com\mycompany\warehouse_desktop\MainApp.class
 com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItemService.class
+com\mycompany\warehouse_desktop\controller\PurchaseHomeController.class
 com\mycompany\warehouse_desktop\db\sale_transaction\SaleTransactionService.class
 com\mycompany\warehouse_desktop\db\roles_of_user\RolesOfUserRepo.class
 com\mycompany\warehouse_desktop\db\purchase_order_item\PurchaseOrderItemId.class
