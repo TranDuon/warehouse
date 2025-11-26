@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.warehouse_desktop.controller.purchase.PurchaseTransactionListController">
+
+    <top>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" left="10" right="10" bottom="10"/>
+            </padding>
+
+            <Label text="Từ ngày:"/>
+            <DatePicker fx:id="dateFrom"/>
+            <Label text="Đến ngày:"/>
+            <DatePicker fx:id="dateTo"/>
+            <Button text="Tìm kiếm" fx:id="btnSearch"/>
+            <Button text="Reset" fx:id="btnReset"/>
+
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Tạo phiếu nhập" fx:id="btnCreate"/>
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="80"/>
+                <TableColumn fx:id="colTime" text="Thời gian" prefWidth="180"/>
+                <TableColumn fx:id="colIsPaid" text="Thanh toán" prefWidth="120"/>
+                <TableColumn fx:id="colEmployee" text="Nhân viên" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>
