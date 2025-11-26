@@ -99,6 +99,7 @@ public class ProductRepository implements RepoInterface<ProductEntity, Long> {
 
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("SQL ERROR: " + e.getMessage());
         }
 
         return null;

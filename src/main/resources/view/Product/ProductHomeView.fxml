@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <BorderPane xmlns="http://javafx.com/javafx/24.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.mycompany.warehouse_desktop.controller.ProductHomeController"
+            fx:controller="com.mycompany.warehouse_desktop.controller.product.ProductHomeController"
             style="-fx-background-color: white;"
             prefHeight="800" prefWidth="900">
 

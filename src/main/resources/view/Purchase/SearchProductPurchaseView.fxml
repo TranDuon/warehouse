@@ -14,7 +14,7 @@
             stylesheets="@/css/style.css"
             xmlns="http://javafx.com/javafx/24.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.mycompany.warehouse_desktop.controller.SearchProductPurchaseController">
+            fx:controller="com.mycompany.warehouse_desktop.controller.purchase.SearchProductPurchaseController">
 
     <top>
         <Label style="-fx-font-size: 20px; -fx-font-weight: bold;"
