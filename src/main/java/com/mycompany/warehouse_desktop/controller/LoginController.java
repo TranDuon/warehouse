@@ -24,6 +24,7 @@ public class LoginController {
     private Stage stage;
     private UserService userService = new UserService();
 
+
     public void init(Stage stage) {
         this.stage = stage;
 
@@ -43,6 +44,7 @@ public class LoginController {
 
         if (user != null) {
             System.out.println("Login thành công: " + user.getUsername());
+            Session.set(user);
             loadHome();
         } else {
             noti.setText("Incorrect username or password!");
@@ -68,6 +70,7 @@ public class LoginController {
     }
 
 
+
     private void clearForm() {
         username.clear();
         userpassword.clear();
@@ -90,6 +93,7 @@ public class LoginController {
             e.printStackTrace();
         }
     }
+
 
     public void backToLogin() {
         try {

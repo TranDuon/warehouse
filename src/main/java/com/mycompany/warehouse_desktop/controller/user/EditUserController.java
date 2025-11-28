@@ -1,5 +1,6 @@
 package com.mycompany.warehouse_desktop.controller.user;
 
+import com.mycompany.warehouse_desktop.controller.Session;
 import com.mycompany.warehouse_desktop.db.role.Role;
 import com.mycompany.warehouse_desktop.db.role.RoleService;
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUser;
@@ -7,6 +8,7 @@ import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUserId;
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUserService;
 import com.mycompany.warehouse_desktop.db.user.UserEntity;
 import com.mycompany.warehouse_desktop.db.user.UserService;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
@@ -38,9 +40,36 @@ public class EditUserController {
         roleList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         setupRoleDisplay();
 
+        checkPermission();
+
         btnSave.setOnAction(e -> save());
         btnCancel.setOnAction(e -> close());
     }
+
+    private void checkPermission() {
+        UserEntity logged = Session.get();
+        if (logged == null) return;
+
+        List<RolesOfUser> roles = rolesOfUserService.findByUserId(logged.getId());
+
+        boolean isAdmin = roles.stream()
+                .anyMatch(r -> r.getId().getRoleId() == 1L); // role 1 = admin
+
+        if (!isAdmin) {
+            btnSave.setDisable(true);
+            roleList.setDisable(true);
+            username.setEditable(false);
+            password.setEditable(false);
+            email.setEditable(false);
+            phone.setEditable(false);
+            enabled.setDisable(true);
+
+            new Alert(Alert.AlertType.ERROR,
+                    "Bạn không có quyền chỉnh sửa tài khoản người dùng!")
+                    .show();
+        }
+    }
+
 
     private void setupRoleDisplay() {
         roleList.setCellFactory(param -> new ListCell<>() {
@@ -105,12 +134,12 @@ public class EditUserController {
         );
 
         userService.update(updated.getId(), updated);
-        // xoa quyen
+
         List<RolesOfUser> oldRoles = rolesOfUserService.findByUserId(updated.getId());
         for (RolesOfUser r : oldRoles) {
             rolesOfUserService.delete(r.getId());
         }
-        // them quyen
+
         for (Role r : roleList.getSelectionModel().getSelectedItems()) {
             RolesOfUserId rid = new RolesOfUserId(updated.getId(), r.getId());
             rolesOfUserService.create(new RolesOfUser(rid));

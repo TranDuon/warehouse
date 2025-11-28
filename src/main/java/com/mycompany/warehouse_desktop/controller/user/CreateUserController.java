@@ -1,5 +1,6 @@
 package com.mycompany.warehouse_desktop.controller.user;
 
+import com.mycompany.warehouse_desktop.controller.Session;
 import com.mycompany.warehouse_desktop.db.role.Role;
 import com.mycompany.warehouse_desktop.db.role.RoleService;
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUser;
@@ -30,6 +31,8 @@ public class CreateUserController {
 
     @FXML
     private void initialize() {
+        checkPermission();
+
         loadRoles();
         setupRoleDisplay();
 
@@ -37,6 +40,24 @@ public class CreateUserController {
         btnCancel.setOnAction(e -> close());
     }
 
+    private void checkPermission() {
+        var currentUser = Session.get();
+        if (currentUser == null) {
+            return;
+        }
+
+        List<RolesOfUser> roles = rolesOfUserService.findByUserId(currentUser.getId());
+        boolean isAdmin = roles.stream()
+                .anyMatch(r -> r.getId().getRoleId() == 1L);  // 1
+
+        if (!isAdmin) {
+            btnSave.setDisable(true);
+            roleList.setDisable(true);
+            new Alert(Alert.AlertType.ERROR,
+                    "Bạn không có quyền tạo tài khoản người dùng mới!")
+                    .show();
+        }
+    }
 
     private void setupRoleDisplay() {
         roleList.setCellFactory(param -> new ListCell<>() {
@@ -57,7 +78,6 @@ public class CreateUserController {
         roleList.getItems().setAll(roles);
         roleList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     }
-
 
     private void save() {
         if (username.getText().isBlank() || password.getText().isBlank()) {

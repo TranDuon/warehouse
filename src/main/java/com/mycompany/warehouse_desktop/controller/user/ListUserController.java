@@ -1,11 +1,15 @@
 package com.mycompany.warehouse_desktop.controller.user;
 
-import com.mycompany.warehouse_desktop.db.role.Role;
-import com.mycompany.warehouse_desktop.db.role.RoleService;
+import com.mycompany.warehouse_desktop.controller.Session;   // 🌟 ĐÃ THÊM
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUser;
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUserService;
+
+import com.mycompany.warehouse_desktop.db.role.Role;
+import com.mycompany.warehouse_desktop.db.role.RoleService;
+
 import com.mycompany.warehouse_desktop.db.user.UserEntity;
 import com.mycompany.warehouse_desktop.db.user.UserService;
+
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -39,6 +43,8 @@ public class ListUserController {
 
     @FXML
     private void initialize() {
+
+        checkPermission();
         setupColumns();
         loadUsers();
 
@@ -46,6 +52,27 @@ public class ListUserController {
         btnEdit.setOnAction(e -> editSelected());
         btnDelete.setOnAction(e -> deleteSelected());
     }
+
+    //  PHÂN QUYỀN ADMIN
+    private void checkPermission() {
+        UserEntity currentUser = Session.get();
+        if (currentUser == null) return;
+
+        List<RolesOfUser> roles = rolesOfUserService.findByUserId(currentUser.getId());
+        boolean isAdmin = roles.stream()
+                .anyMatch(r -> r.getId().getRoleId() == 1);  // role ID 1 = ADMIN
+
+        if (!isAdmin) {
+            btnCreate.setDisable(true);
+            btnEdit.setDisable(true);
+            btnDelete.setDisable(true);
+
+            new Alert(Alert.AlertType.ERROR,
+                    "Bạn không có quyền truy cập vào mục quản lý người dùng!")
+                    .show();
+        }
+    }
+    //
 
 
     private void setupColumns() {
@@ -58,7 +85,6 @@ public class ListUserController {
         colRoles.setCellValueFactory(c -> {
             List<RolesOfUser> mapping = rolesOfUserService.findByUserId(c.getValue().getId());
 
-            // Lấy tên role
             String roles = mapping.stream()
                     .map(m -> roleService.findById(m.getId().getRoleId()))
                     .filter(r -> r != null)
@@ -69,11 +95,9 @@ public class ListUserController {
         });
     }
 
-
     private void loadUsers() {
         table.getItems().setAll(userService.getList(1, 200));
     }
-
 
     private void openCreateUser() {
         try {
@@ -85,13 +109,12 @@ public class ListUserController {
             st.setTitle("Tạo tài khoản mới");
             st.showAndWait();
 
-            loadUsers(); // reload sau khi tạo
+            loadUsers();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
     private void editSelected() {
         UserEntity user = table.getSelectionModel().getSelectedItem();
@@ -116,7 +139,6 @@ public class ListUserController {
         }
     }
 
-
     private void deleteSelected() {
         UserEntity user = table.getSelectionModel().getSelectedItem();
         if (user == null) return;
@@ -129,10 +151,8 @@ public class ListUserController {
 
         if (confirm.getResult() != ButtonType.YES) return;
 
-        // Xóa user
         userService.delete(user.getId());
 
-        // Xóa roles mapping
         List<RolesOfUser> list = rolesOfUserService.findByUserId(user.getId());
         for (RolesOfUser r : list) {
             rolesOfUserService.delete(r.getId());
