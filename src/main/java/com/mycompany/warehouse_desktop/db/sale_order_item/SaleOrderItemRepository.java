@@ -22,8 +22,7 @@ public class SaleOrderItemRepository implements RepoInterface<SaleOrderItem, Sal
             );
         } catch (SQLException e) {
             e.printStackTrace();
-            return null;
-        }
+        }return null;
     }
 
     @Override

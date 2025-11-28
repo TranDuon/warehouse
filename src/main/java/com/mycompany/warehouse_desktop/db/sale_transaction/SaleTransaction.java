@@ -5,9 +5,9 @@ import java.sql.Timestamp;
 public class SaleTransaction {
 
     private Long id;
-    private Timestamp timestamp;       // Thời gian tạo giao dịch
-    private Boolean isPaid;            // Đã thanh toán hay chưa
-    private Long userIdEmployee;       // ID nhân viên thực hiện
+    private Timestamp timestamp;
+    private Boolean isPaid;
+    private Long userIdEmployee;
 
     public SaleTransaction() {}
 
@@ -18,45 +18,25 @@ public class SaleTransaction {
         this.userIdEmployee = userIdEmployee;
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public Timestamp getTimestamp() { return timestamp; }
+    public void setTimestamp(Timestamp timestamp) { this.timestamp = timestamp; }
 
-    public Timestamp getTimestamp() {
-        return timestamp;
-    }
+    public Boolean getIsPaid() { return isPaid; }
+    public void setIsPaid(Boolean isPaid) { this.isPaid = isPaid; }
 
-    public void setTimestamp(Timestamp timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public Boolean getIsPaid() {
-        return isPaid;
-    }
-
-    public void setIsPaid(Boolean isPaid) {
-        this.isPaid = isPaid;
-    }
-
-    public Long getUserIdEmployee() {
-        return userIdEmployee;
-    }
-
-    public void setUserIdEmployee(Long userIdEmployee) {
-        this.userIdEmployee = userIdEmployee;
-    }
+    public Long getUserIdEmployee() { return userIdEmployee; }
+    public void setUserIdEmployee(Long userIdEmployee) { this.userIdEmployee = userIdEmployee; }
 
     @Override
     public String toString() {
-        return "Một lượt bán {" +
-                "Mã giao dịch=" + id +
+        return "Lượt bán { " +
+                "ID=" + id +
                 ", Thời gian=" + timestamp +
                 ", Đã thanh toán=" + isPaid +
-                ", Mã nhân viên=" + userIdEmployee +
-                '}';
+                ", Nhân viên=" + userIdEmployee +
+                " }";
     }
 }

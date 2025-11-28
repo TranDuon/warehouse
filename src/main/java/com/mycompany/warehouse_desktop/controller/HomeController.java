@@ -11,6 +11,10 @@ public class HomeController {
     @FXML
     private VBox mainContent;
 
+    public void openUserPage() {
+        loadPage("/view/User/UserHomeView.fxml");
+    }
+
     public void openProductPage() {
         loadPage("/view/Product/ProductHomeView.fxml");
     }

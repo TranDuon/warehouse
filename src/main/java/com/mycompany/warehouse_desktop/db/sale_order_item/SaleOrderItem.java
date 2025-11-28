@@ -14,37 +14,12 @@ public class SaleOrderItem {
         this.price = price;
     }
 
-    public SaleOrderItemId getId() {
-        return id;
-    }
+    public SaleOrderItemId getId() { return id; }
+    public void setId(SaleOrderItemId id) { this.id = id; }
 
-    public void setId(SaleOrderItemId id) {
-        this.id = id;
-    }
+    public Integer getQuantity() { return quantity; }
+    public void setQuantity(Integer quantity) { this.quantity = quantity; }
 
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
-    public Long getPrice() {
-        return price;
-    }
-
-    public void setPrice(Long price) {
-        this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Sản phẩm trong hóa đơn bán {" +
-                "Mã sản phẩm=" + id.getProductId() +
-                ", Mã giao dịch bán=" + id.getSaleTransactionId() +
-                ", Số lượng=" + quantity +
-                ", Đơn giá=" + price +
-                '}';
-    }
+    public Long getPrice() { return price; }
+    public void setPrice(Long price) { this.price = price; }
 }

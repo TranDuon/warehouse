@@ -6,16 +6,16 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    String url = "jdbc:mysql://tramway.proxy.rlwy.net:15770/railway";
-    String user = "root";
-    String pass = "jRtMLjoACtxozJtkKfWVliQtPtTAVhKe";
+    private final String url = "jdbc:mysql://tramway.proxy.rlwy.net:15770/railway";
+    private final String user = "root";
+    private final String pass = "jRtMLjoACtxozJtkKfWVliQtPtTAVhKe";
 
 
     private static DBConnection instance;
 
     private DBConnection() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");  // Load driver MySQL
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             System.err.println(" MySQL JDBC Driver not found!");
             e.printStackTrace();

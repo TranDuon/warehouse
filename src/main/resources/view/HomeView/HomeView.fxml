@@ -30,7 +30,7 @@
 
             <Pane HBox.hgrow="ALWAYS" />
 
-            <Button fx:id="userButton" style="-fx-background-color: #7aa872; -fx-text-fill: white; -fx-background-radius: 6;" text="User" />
+            <Button fx:id="userButton" onAction="#openUserPage" style="-fx-background-color: #7aa872; -fx-text-fill: white; -fx-background-radius: 6;" text="User" />
         </HBox>
     </top>
 

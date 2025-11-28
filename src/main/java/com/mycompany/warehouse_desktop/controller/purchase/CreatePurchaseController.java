@@ -87,7 +87,6 @@ public class CreatePurchaseController {
         });
     }
 
-    /** ✔ Mở cửa sổ tìm kiếm sản phẩm */
     private void openSearchPopup() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Purchase/SearchProductPurchaseView.fxml"));
@@ -108,7 +107,6 @@ public class CreatePurchaseController {
         }
     }
 
-    /** ✔ Thêm sản phẩm vào bảng nếu chưa có */
     private void addProductToTable(ProductEntity p) {
         for (ProductEntity pe : productList) {
             if (pe.getId().equals(p.getId())) {
@@ -122,7 +120,6 @@ public class CreatePurchaseController {
         table.setItems(productList);
     }
 
-    /** ✔ Xóa sản phẩm khỏi danh sách */
     private void removeProduct() {
         ProductEntity selected = table.getSelectionModel().getSelectedItem();
         if (selected != null) {
@@ -131,7 +128,6 @@ public class CreatePurchaseController {
         }
     }
 
-    /** ✔ Lưu phiếu nhập + chi tiết + cập nhật kho */
     private void savePurchase() {
         try {
             PurchaseTransaction t = new PurchaseTransaction(
