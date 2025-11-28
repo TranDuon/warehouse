@@ -39,10 +39,10 @@
             <!-- TABLE -->
             <TableView fx:id="table" prefHeight="360" VBox.vgrow="ALWAYS">
                 <columns>
-                    <TableColumn fx:id="colId" prefWidth="80" text="ID" />
-                    <TableColumn fx:id="colThoigian" prefWidth="180" text="Thời gian" />
-                    <TableColumn fx:id="colDathanhtoan" prefWidth="140" text="Đã thanh toán" />
-                    <TableColumn fx:id="colUserId" prefWidth="140" text="Nhân viên" />
+                    <TableColumn fx:id="colId" prefWidth="111.20001065731049" text="ID" />
+                    <TableColumn fx:id="colThoigian" prefWidth="237.59998321533203" text="Thời gian" />
+                    <TableColumn fx:id="colDathanhtoan" prefWidth="129.5999755859375" text="Đã thanh toán" />
+                    <TableColumn fx:id="colUserId" prefWidth="300.0000183105469" text="Nhân viên" />
                 </columns>
             </TableView>
 

@@ -27,7 +27,7 @@
                 </PasswordField>
                 <ImageView fitHeight="227.0" fitWidth="237.0" layoutX="418.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@/images/logo-icon.png" />
+                        <Image url="@/images/logo-icon.jpg" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="282.0" fitWidth="503.0" layoutX="-110.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" AnchorPane.leftAnchor="-110.0">
