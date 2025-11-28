@@ -62,7 +62,7 @@
                         <TableColumn fx:id="colPrice" prefWidth="88.00006103515625" text="Giá" />
                         <TableColumn fx:id="colUnit" prefWidth="65.5999755859375" text="Đơn vị" />
                         <TableColumn fx:id="colDescription" prefWidth="181.5999755859375" text="Mô tả" />
-                        <TableColumn fx:id="colQuantity" prefWidth="188.0" resizable="false" text="Số lượng" />
+                        <TableColumn fx:id="colQuantity" prefWidth="134.4000244140625" resizable="false" text="Số lượng" />
                     </columns>
                 </TableView>
 

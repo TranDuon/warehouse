@@ -38,10 +38,10 @@
             <!-- Bảng -->
             <TableView fx:id="table" prefHeight="350" VBox.vgrow="ALWAYS">
                 <columns>
-                    <TableColumn fx:id="colId" prefWidth="80" text="ID" />
-                    <TableColumn fx:id="colThoigian" prefWidth="180" text="Thời gian" />
-                    <TableColumn fx:id="colDathanhtoan" prefWidth="120" text="Đã thanh toán" />
-                    <TableColumn fx:id="colUserId" prefWidth="120" text="Nhân viên" />
+                    <TableColumn fx:id="colId" prefWidth="99.99999845027924" resizable="false" text="ID" />
+                    <TableColumn fx:id="colThoigian" prefWidth="265.59998321533203" resizable="false" text="Thời gian" />
+                    <TableColumn fx:id="colDathanhtoan" prefWidth="167.19998168945312" resizable="false" text="Đã thanh toán" />
+                    <TableColumn fx:id="colUserId" prefWidth="247.199951171875" resizable="false" text="Nhân viên" />
                 </columns>
             </TableView>
 

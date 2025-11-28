@@ -10,15 +10,10 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="500" prefWidth="650"
-            stylesheets="@/css/style.css"
-            xmlns="http://javafx.com/javafx/24.0.1"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.mycompany.warehouse_desktop.controller.purchase.SearchProductPurchaseController">
+<BorderPane prefHeight="500" prefWidth="650" stylesheets="@/css/style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.warehouse_desktop.controller.purchase.SearchProductPurchaseController">
 
     <top>
-        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;"
-               text="Tìm kiếm và thêm vật phẩm" BorderPane.alignment="CENTER" />
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Tìm kiếm và thêm vật phẩm" BorderPane.alignment="CENTER" />
     </top>
 
     <center>
@@ -40,11 +35,11 @@
             <TableView fx:id="table" prefHeight="320" VBox.vgrow="ALWAYS">
                 <columns>
                     <TableColumn fx:id="colId" text="ID" />
-                    <TableColumn fx:id="colTen" text="Tên" />
-                    <TableColumn fx:id="colGia" text="Giá" />
-                    <TableColumn fx:id="colDonVi" text="Đơn vị" />
-                    <TableColumn fx:id="colMoTa" text="Mô tả" />
-                    <TableColumn fx:id="colSoLuong" text="Số lượng" />
+                    <TableColumn fx:id="colTen" prefWidth="136.8000030517578" text="Tên" />
+                    <TableColumn fx:id="colGia" prefWidth="69.5999755859375" text="Giá" />
+                    <TableColumn fx:id="colDonVi" prefWidth="76.79998779296875" text="Đơn vị" />
+                    <TableColumn fx:id="colMoTa" prefWidth="156.79986572265625" text="Mô tả" />
+                    <TableColumn fx:id="colSoLuong" prefWidth="111.20001220703125" text="Số lượng" />
                 </columns>
             </TableView>
 
