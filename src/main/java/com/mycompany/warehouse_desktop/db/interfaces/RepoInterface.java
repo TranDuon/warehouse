@@ -5,7 +5,6 @@ import java.util.List;
 
 public interface RepoInterface<T, Id> {
 
-    // Convert từ ResultSet sang Entity
     T getFromResultSet(ResultSet rs);
 
     T findById(Id id);

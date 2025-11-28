@@ -14,7 +14,7 @@ public class DBConnection {
 
     private static DBConnection instance;
 
-    // HikariCP datasource
+    // HikariCP datasource để tối ưu kết nối đến database
     private HikariDataSource dataSource;
 
     private DBConnection() {

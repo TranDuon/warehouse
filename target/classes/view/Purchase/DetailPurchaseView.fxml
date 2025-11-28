@@ -61,9 +61,9 @@
                 <columns>
                     <TableColumn fx:id="colProductId" prefWidth="120" text="ID vật phẩm" />
                     <TableColumn fx:id="colProductName" prefWidth="240" text="Tên vật phẩm" />
-                    <TableColumn fx:id="colTransactionId" prefWidth="120" text="ID lượt nhập" />
-                    <TableColumn fx:id="colQuantity" prefWidth="100" text="Số lượng" />
-                    <TableColumn fx:id="colPrice" prefWidth="180" text="Giá" />
+                    <TableColumn fx:id="colTransactionId" prefWidth="142.4000244140625" text="ID lượt nhập" />
+                    <TableColumn fx:id="colQuantity" prefWidth="103.99996948242188" text="Số lượng" />
+                    <TableColumn fx:id="colPrice" prefWidth="172.7999267578125" text="Giá" />
                 </columns>
 
             </TableView>

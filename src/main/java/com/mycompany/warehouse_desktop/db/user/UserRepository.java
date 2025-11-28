@@ -146,7 +146,6 @@ public class UserRepository implements RepoInterface<UserEntity, Long> {
         return false;
     }
 
-    // Extra Methods (BUSINESS)
 
     public UserEntity findByUsername(String username) {
         String sql = "SELECT * FROM User WHERE username=?;";

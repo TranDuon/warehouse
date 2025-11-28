@@ -75,8 +75,6 @@ public class DetailProductController {
             Stage stage = new Stage();
             stage.setTitle("Xóa vật phẩm");
             stage.setScene(new Scene(loader.load()));
-
-            // Lưu ý: DeleteProductController ở package con /product
             com.mycompany.warehouse_desktop.controller.product.DeleteProductController controller =
                     loader.getController();
             controller.setProduct(currentProduct);

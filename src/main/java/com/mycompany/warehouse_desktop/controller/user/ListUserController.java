@@ -1,6 +1,6 @@
 package com.mycompany.warehouse_desktop.controller.user;
 
-import com.mycompany.warehouse_desktop.controller.Session;   // 🌟 ĐÃ THÊM
+import com.mycompany.warehouse_desktop.controller.Session;
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUser;
 import com.mycompany.warehouse_desktop.db.roles_of_user.RolesOfUserService;
 
@@ -53,14 +53,14 @@ public class ListUserController {
         btnDelete.setOnAction(e -> deleteSelected());
     }
 
-    //  PHÂN QUYỀN ADMIN
+
     private void checkPermission() {
         UserEntity currentUser = Session.get();
         if (currentUser == null) return;
 
         List<RolesOfUser> roles = rolesOfUserService.findByUserId(currentUser.getId());
         boolean isAdmin = roles.stream()
-                .anyMatch(r -> r.getId().getRoleId() == 1);  // role ID 1 = ADMIN
+                .anyMatch(r -> r.getId().getRoleId() == 1); //  tài khoản đầu tiên làm admin khi đăng kí
 
         if (!isAdmin) {
             btnCreate.setDisable(true);

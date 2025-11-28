@@ -60,9 +60,9 @@
                 <columns>
                     <TableColumn fx:id="colIdVatPham" prefWidth="110" text="ID vật phẩm" />
                     <TableColumn fx:id="colTen" prefWidth="213.60001373291016" text="Tên vật phẩm" />
-                    <TableColumn fx:id="colIdLuotBan" prefWidth="109.60003662109375" text="ID lượt bán" />
-                    <TableColumn fx:id="colSoLuong" minWidth="7.199951171875" prefWidth="80.79995727539062" text="Số lượng" />
-                    <TableColumn fx:id="colGia" prefWidth="200.79998779296875" text="Giá" />
+                    <TableColumn fx:id="colIdLuotBan" prefWidth="175.20001220703125" text="ID lượt bán" />
+                    <TableColumn fx:id="colSoLuong" minWidth="7.199951171875" prefWidth="138.39993286132812" text="Số lượng" />
+                    <TableColumn fx:id="colGia" prefWidth="140.800048828125" text="Giá" />
                 </columns>
             </TableView>
         </VBox>

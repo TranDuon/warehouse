@@ -156,7 +156,7 @@ public class ProductRepository implements RepoInterface<ProductEntity, Long> {
 
     // Tìm theo tên hoặc mô tả
     public List<ProductEntity> findByName(String name) {
-        String sql = "SELECT * FROM VatPham WHERE ten LIKE ? OR mota LIKE ?;";
+        String sql = "SELECT * FROM VatPham WHERE ten LIKE ?;";
 
         List<ProductEntity> list = new ArrayList<>();
 
@@ -164,7 +164,6 @@ public class ProductRepository implements RepoInterface<ProductEntity, Long> {
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, "%" + name + "%");
-            ps.setString(2, "%" + name + "%");
 
             ResultSet rs = ps.executeQuery();
 

@@ -28,7 +28,6 @@ public class SearchProductPurchaseController {
     // callback
     private Consumer<ProductEntity> addCallback;
 
-    // ✔ tên hàm chuẩn để CreatePurchaseController gọi
     public void setCallback(Consumer<ProductEntity> callback) {
         this.addCallback = callback;
     }

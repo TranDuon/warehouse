@@ -18,7 +18,7 @@ public class HomeController {
     private VBox mainContent;
 
     @FXML
-    private Button userButton;   //
+    private Button userButton;
 
     private final RolesOfUserService rolesService = new RolesOfUserService();
 

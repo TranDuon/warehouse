@@ -51,7 +51,6 @@ public class CreatePurchaseController {
         btnCancel.setOnAction(e -> closeWindow());
     }
 
-    /** ✔ Setup các cột của bảng */
     private void setupColumns() {
         colStt.setCellValueFactory(c -> new SimpleIntegerProperty(table.getItems().indexOf(c.getValue()) + 1));
         colId.setCellValueFactory(c -> new SimpleLongProperty(c.getValue().getId()));
